@@ -722,7 +722,7 @@ AddEventHandler('ft_libs:OnClientReady', function()
 					callback = function()
 						exports.ft_libs:HelpPromt(v.HelpPrompt)
 						if IsControlJustReleased(0, 38) and IsInputDisabled(0) and GetLastInputMethod(2) and not IsPedInAnyVehicle(PlayerPedId()) then
-							OpenMenuGarage(v, "personal", k, "airplane")
+							OpenMenuGarage(v, "personal", k, "aircraft")
 						end
 					end,
 				},
@@ -754,7 +754,7 @@ AddEventHandler('ft_libs:OnClientReady', function()
 					callback = function()
 						exports.ft_libs:HelpPromt(v.SpawnPoint.HelpPrompt)
 						if IsControlJustReleased(0, 38) and IsInputDisabled(0) and GetLastInputMethod(2) and not IsPedInAnyVehicle(PlayerPedId()) then
-							ListVehiclesMenu(v, "personal", k, "airplane")
+							ListVehiclesMenu(v, "personal", k, "aircraft")
 						end
 					end,
 				},
@@ -785,7 +785,7 @@ AddEventHandler('ft_libs:OnClientReady', function()
 					callback = function()
 						exports.ft_libs:HelpPromt(v.DeletePoint.HelpPrompt)
 						if IsControlJustReleased(0, 38) and IsInputDisabled(0) and GetLastInputMethod(2) then
-							StockVehicleMenu("personal", k, "airplane")
+							StockVehicleMenu("personal", k, "aircraft")
 						end
 					end,
 				},
